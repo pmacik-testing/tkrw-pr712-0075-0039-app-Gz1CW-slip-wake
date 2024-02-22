@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dpyp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0039-tenant/tkrw-pr712-0075-0039-app/devfile-sample-dpyp@sha256:87c6a5e02e5ef7504cd6edbf26cb65416fbbcbc8f39f5cd0388ead6f5cb4bc3b
+        name: my-nodejs
+        resources: {}
+status: {}
